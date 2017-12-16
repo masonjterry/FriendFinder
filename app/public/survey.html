@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friend Finder Survey</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>Friend Finer Survey</h1>
+    <h1>Friend Finder Survey</h1>
   </header>
   <main>
+    <div>
+      <label for="name">Name (Required)</label><br>
+      <input type="text" name="name"><br>
+      <label for="image">Link to Photo (Required)</label><br>
+      <input type="text" name="image"><br>
+    </div>
     <div id="statement-1">
       <p><strong>Statement 1: </strong>I love a nice quiet evening</p>
       <select class="dropdown" name="statement1">
@@ -119,6 +127,9 @@
         <option value="4">4</option>
         <option value="5">5 Strongly Agree</option>
       </select>
+    </div>
+    <div>
+      <button id="button">Submit</button>
     </div>
   </main>
 </body>
