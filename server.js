@@ -3,6 +3,7 @@ let bodyParser = require("body-parser");
 let path = require("path");
 let app = express();
 let fs = require("fs");
+let friends = require("./app/data/friend.js");
 let PORT = 8080;
 
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -23,11 +24,19 @@ app.get("/:stop?", function(req, res) {
   res.sendFile(path.join(__dirname, "app/public/home.html"));
 });
 
-// app.get("/api/friends", function(req, res) {
-//     fs.readFile("friend.js", "utf8", function(err, data) {
-//       return res.json(data);
-//     });
-// });
+app.get("/api/friends", function(req, res) {
+      return res.json(friends);
+});
+
+app.post("/survey", function(req, res) {
+  let newFriend = req.body;
+
+  console.log(newFriend);
+
+  friends.push(newFriend);
+
+  res.json(newCharacter);
+});
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT)
