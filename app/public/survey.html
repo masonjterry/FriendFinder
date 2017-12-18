@@ -133,9 +133,34 @@
     </div>
   </main>
 
-  <!-- JavaScript files -->
-  <script type="text/javascript" src="../data/friend.js"></script>
-  <script type="text/javascript" src="../routing/apiRouting.js"></script>
-  <script type="text/javascript" src="../routing/htmlRoutes.js"></script>
+<script type="text/javascript">
+  $("#button").on("click", function(event) {
+
+    event.preventDefault();
+
+    let newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#image").val().trim(),
+      scores: $("#statement1").val()
+    };
+
+    // newFriend.scores.push(parseInt($("#statement1").val()));
+    // newFriend.scores.push(parseInt($("#statement2").val()));
+    // newFriend.scores.push(parseInt($("#statement3").val()));
+    // newFriend.scores.push(parseInt($("#statement4").val()));
+    // newFriend.scores.push(parseInt($("#statement5").val()));
+    // newFriend.scores.push(parseInt($("#statement6").val()));
+    // newFriend.scores.push(parseInt($("#statement7").val()));
+    // newFriend.scores.push(parseInt($("#statement8").val()));
+    // newFriend.scores.push(parseInt($("#statement9").val()));
+    // newFriend.scores.push(parseInt($("#statement10").val()));
+
+
+    $.post("/api/friends", newFriend).done(function(data) {
+      console.log(newFriend);
+      alert("Added to friend group!");
+    });
+  });
+</script>
 </body>
 </html>

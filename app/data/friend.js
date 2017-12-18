@@ -1,14 +1,3 @@
-let friends = [{ name: "Fred", photo: "#", scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]}];
-let score;
-
-function findFriend() {
-  score = friends[0].scores[0];
-  for (let j = 0; j < 10; j++) {
-    score += friends[0].scores[j];
-  };
-  console.log(score);
-}
-
-findFriend();
+let friends = [{ name: "Fred", photo: "#", scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]}, {name: "Stephen", photo: "#", scores: [3, 5, 4, 5, 3, 4, 3, 4, 4, 5]}];
 
 module.exports = friends;
