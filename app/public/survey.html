@@ -14,13 +14,13 @@
   <main>
     <div>
       <label for="name">Name (Required)</label><br>
-      <input type="text" name="name"><br>
+      <input type="text" name="name" id="name"><br>
       <label for="image">Link to Photo (Required)</label><br>
-      <input type="text" name="image"><br>
+      <input type="text" name="image" id="image"><br>
     </div>
     <div id="statement-1">
       <p><strong>Statement 1: </strong>I love a nice quiet evening</p>
-      <select class="dropdown" name="statement1">
+      <select class="dropdown" id="statement1">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -31,7 +31,7 @@
     </div>
     <div id="statement-2">
       <p><strong>Statement 2: </strong>I would go to a party every night if I could</p>
-      <select class="dropdown" name="statement3">
+      <select class="dropdown" id="statement2">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -42,7 +42,7 @@
     </div>
     <div id="statement-3">
       <p><strong>Statement 3: </strong>I love dogs</p>
-      <select class="dropdown" name="statement3">
+      <select class="dropdown" id="statement3">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -53,7 +53,7 @@
     </div>
     <div id="statement-4">
       <p><strong>Statement 4: </strong>I love cats</p>
-      <select class="dropdown" name="statement4">
+      <select class="dropdown" id="statement4">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -64,7 +64,7 @@
     </div>
     <div id="statement-5">
       <p><strong>Statement 5: </strong>I love reading a good book</p>
-      <select class="dropdown" name="statement5">
+      <select class="dropdown" id="statement5">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -75,7 +75,7 @@
     </div>
     <div id="statement-6">
       <p><strong>Statement 6: </strong>I would rather watch the movie</p>
-      <select class="dropdown" name="statement6">
+      <select class="dropdown" id="statement6">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -86,7 +86,7 @@
     </div>
     <div id="statement-7">
       <p><strong>Statement 7: </strong>I love cooking</p>
-      <select class="dropdown" name="statement7">
+      <select class="dropdown" id="statement7">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -97,7 +97,7 @@
     </div>
     <div id="statement-8">
       <p><strong>Statement 8: </strong>I love eating out</p>
-      <select class="dropdown" name="statement8">
+      <select class="dropdown" id="statement8">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -108,7 +108,7 @@
     </div>
     <div id="statement-9">
       <p><strong>Statement 9: </strong>I am a night owl</p>
-      <select class="dropdown" name="statement9">
+      <select class="dropdown" id="statement9">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -119,7 +119,7 @@
     </div>
     <div id="statement-10">
       <p><strong>Statement 10: </strong>I am a morning person</p>
-      <select class="dropdown" name="statement10">
+      <select class="dropdown" id="statement10">
         <option value="0">Select</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
@@ -132,5 +132,10 @@
       <button id="button">Submit</button>
     </div>
   </main>
+
+  <!-- JavaScript files -->
+  <script type="text/javascript" src="../data/friend.js"></script>
+  <script type="text/javascript" src="../routing/apiRouting.js"></script>
+  <script type="text/javascript" src="../routing/htmlRoutes.js"></script>
 </body>
 </html>
