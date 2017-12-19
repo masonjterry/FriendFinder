@@ -4,134 +4,168 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friend Finder Survey</title>
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Friend Finder Survey</h1>
-  </header>
-  <main>
-    <div>
-      <label for="name">Name (Required)</label><br>
-      <input type="text" name="name" id="name"><br>
-      <label for="image">Link to Photo (Required)</label><br>
-      <input type="text" name="image" id="image"><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="jumbotron">
+          <h1 class="text-center">Friend Finder Survey</h1>
+        </header>
+      </div>
     </div>
-    <div id="statement-1">
-      <p><strong>Statement 1: </strong>I love a nice quiet evening</p>
-      <select class="dropdown" id="statement1">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
+    <div class="row">
+      <div class="col-md-12">
+        <main>
+          <div class="form-group">
+            <label for="name"><strong>Name </strong>(Required)</label><br>
+            <input class="form-control" type="text" name="name" id="name"><br>
+            <label for="image"><strong>Link to Photo </strong>(Required)</label><br>
+            <input class="form-control" type="text" name="image" id="image"><br>
+          </div>
+          <div class="form-group" id="statement-1">
+            <p><strong>1: </strong>I love a nice quiet evening</p>
+            <select class="form-control dropdown" id="statement1">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-2">
+            <p><strong>2: </strong>I would go to a party every night if I could</p>
+            <select class="form-control dropdown" id="statement2">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-3">
+            <p><strong>3: </strong>I love dogs</p>
+            <select class="form-control dropdown" id="statement3">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-4">
+            <p><strong>4: </strong>I love cats</p>
+            <select class="form-control dropdown" id="statement4">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-5">
+            <p><strong>5: </strong>I love reading a good book</p>
+            <select class="form-control dropdown" id="statement5">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-6">
+            <p><strong>6: </strong>I would rather watch the movie</p>
+            <select class="form-control dropdown" id="statement6">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-7">
+            <p><strong>7: </strong>I love cooking</p>
+            <select class="form-control dropdown" id="statement7">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-8">
+            <p><strong>8: </strong>I love eating out</p>
+            <select class="form-control dropdown" id="statement8">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-9">
+            <p><strong>9: </strong>I am a night owl</p>
+            <select class="form-control dropdown" id="statement9">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div class="form-group" id="statement-10">
+            <p><strong>10: </strong>I am a morning person</p>
+            <select class="form-control dropdown" id="statement10">
+              <option value="0">Select</option>
+              <option value="1">1 Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 Strongly Agree</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn btn-primary" id="button" data-toggle="modal" data-target="exampleModal">Submit</button>
+          </div>
+        </main>
+      </div>
     </div>
-    <div id="statement-2">
-      <p><strong>Statement 2: </strong>I would go to a party every night if I could</p>
-      <select class="dropdown" id="statement2">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
+  </div>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
     </div>
-    <div id="statement-3">
-      <p><strong>Statement 3: </strong>I love dogs</p>
-      <select class="dropdown" id="statement3">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-4">
-      <p><strong>Statement 4: </strong>I love cats</p>
-      <select class="dropdown" id="statement4">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-5">
-      <p><strong>Statement 5: </strong>I love reading a good book</p>
-      <select class="dropdown" id="statement5">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-6">
-      <p><strong>Statement 6: </strong>I would rather watch the movie</p>
-      <select class="dropdown" id="statement6">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-7">
-      <p><strong>Statement 7: </strong>I love cooking</p>
-      <select class="dropdown" id="statement7">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-8">
-      <p><strong>Statement 8: </strong>I love eating out</p>
-      <select class="dropdown" id="statement8">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-9">
-      <p><strong>Statement 9: </strong>I am a night owl</p>
-      <select class="dropdown" id="statement9">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div id="statement-10">
-      <p><strong>Statement 10: </strong>I am a morning person</p>
-      <select class="dropdown" id="statement10">
-        <option value="0">Select</option>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <div>
-      <button id="button">Submit</button>
-    </div>
-  </main>
+  </div>
+</div>
 
 <script type="text/javascript">
   $("#button").on("click", function(event) {
@@ -141,20 +175,19 @@
     let newFriend = {
       name: $("#name").val().trim(),
       photo: $("#image").val().trim(),
-      scores: []
+      scores: [
+        parseInt($("#statement1").val()),
+        parseInt($("#statement2").val()),
+        parseInt($("#statement3").val()),
+        parseInt($("#statement4").val()),
+        parseInt($("#statement5").val()),
+        parseInt($("#statement6").val()),
+        parseInt($("#statement7").val()),
+        parseInt($("#statement8").val()),
+        parseInt($("#statement9").val()),
+        parseInt($("#statement10").val()),
+      ]
     };
-
-    newFriend.scores.push(parseInt($("#statement1").val()));
-    newFriend.scores.push(parseInt($("#statement2").val()));
-    newFriend.scores.push(parseInt($("#statement3").val()));
-    newFriend.scores.push(parseInt($("#statement4").val()));
-    newFriend.scores.push(parseInt($("#statement5").val()));
-    newFriend.scores.push(parseInt($("#statement6").val()));
-    newFriend.scores.push(parseInt($("#statement7").val()));
-    newFriend.scores.push(parseInt($("#statement8").val()));
-    newFriend.scores.push(parseInt($("#statement9").val()));
-    newFriend.scores.push(parseInt($("#statement10").val()));
-
 
     $.post("/api/friends", newFriend).done(function(data) {
       console.log(newFriend);
