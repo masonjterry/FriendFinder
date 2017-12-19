@@ -9,6 +9,7 @@ module.exports = function apiRoutes(app) {
 
   app.post("/api/friends", function(req, res) {
     let newFriend = req.body;
+    let scores = req.body.scores;
 
     console.log(newFriend);
 
