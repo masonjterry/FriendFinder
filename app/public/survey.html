@@ -202,9 +202,12 @@
       // check other scores to see which friend is the closest match
 
       // display that friend on the screen
+      console.log('data sent to api', newFriend);
 
       $.post("/api/friends", newFriend).done(function(data) {
-        console.log(newFriend);
+        console.log("newFriend", newFriend);
+        console.log('data', data);
+        alert(data.name + " is your match");
         alert("Added to friend group!");
       });
   }
