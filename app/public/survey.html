@@ -10,6 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
@@ -184,29 +186,22 @@
         name: $("#name").val().trim(),
         photo: $("#image").val().trim(),
         scores: [
-          parseInt($("#statement1").val()),
-          parseInt($("#statement2").val()),
-          parseInt($("#statement3").val()),
-          parseInt($("#statement4").val()),
-          parseInt($("#statement5").val()),
-          parseInt($("#statement6").val()),
-          parseInt($("#statement7").val()),
-          parseInt($("#statement8").val()),
-          parseInt($("#statement9").val()),
-          parseInt($("#statement10").val()),
+          $("#statement1").val(),
+          $("#statement2").val(),
+          $("#statement3").val(),
+          $("#statement4").val(),
+          $("#statement5").val(),
+          $("#statement6").val(),
+          $("#statement7").val(),
+          $("#statement8").val(),
+          $("#statement9").val(),
+          $("#statement10").val(),
         ]
       };
 
-      // add score together
-
-      // check other scores to see which friend is the closest match
-
-      // display that friend on the screen
       console.log('data sent to api', newFriend);
 
       $.post("/api/friends", newFriend).done(function(data) {
-        console.log("newFriend", newFriend);
-        console.log('data', data);
         alert(data.name + " is your match");
         alert("Added to friend group!");
       });
